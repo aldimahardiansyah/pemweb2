@@ -8,6 +8,10 @@ $skills = $_POST['skills'];
 $domisili = $_POST['domisili'];
 $email = $_POST['email'];
 
+if ($skills == null) {
+    $skills = [];
+}
+
 $nilai_skills = [
     'HTML' => 10,
     'CSS' => 10,
